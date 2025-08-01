@@ -18,7 +18,7 @@ const getBorderColor = (value: Player | null, isWinner: boolean) => {
 function Square({ value, isWinner, onClick }: SquareProps) {
   return (
     <motion.button
-      className={`h-32 w-32 border-4 border-gray-200 text-4xl font-bold rounded-xl ${getTextColor(value)} ${getBorderColor(value, isWinner)}`}
+      className={`h-24 w-24 md:h-32 md:w-32 border-4 border-gray-200 text-4xl font-bold rounded-xl ${getTextColor(value)} ${getBorderColor(value, isWinner)}`}
       onClick={onClick}
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}

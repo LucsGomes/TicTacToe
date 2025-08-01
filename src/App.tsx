@@ -28,13 +28,15 @@ function App() {
 
   return (
     <main className="bg-blue-200 min-h-screen flex flex-col items-center justify-center">
-      <div className="w-full max-w-lg bg-blue-100 p-8 rounded-2xl">
-        <div className="flex items-center justify-center gap-3 mb-8">
+      <div className="w-full max-w-[350px] md:max-w-lg bg-blue-100 p-5 md:p-8 rounded-2xl">
+        <div className="flex items-center justify-center gap-3 mb-4 md:mb-8">
           <Gamepad2 className="h-8 w-8 text-pink" />
-          <h1 className="text-white text-4xl font-bold">Tic Tac Toe</h1>
+          <h1 className="text-white text-3xl md:text-4xl font-bold">
+            Tic Tac Toe
+          </h1>
         </div>
 
-        <div className="mb-6 text-center">
+        <div className="mb-4 md:mb-6 text-center">
           <p className="text-xl font-semibold text-gray-100">
             {getGameStatus()}
           </p>
